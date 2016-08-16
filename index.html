@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700" rel="stylesheet">
+</head>
+
+ <body>
+     
+     <header>
+	 		<h1>THE CODE REVIEW</h1>
+     </header>
+
+ 	<section id="wrapper">
+
+	 	
+        
+        <section class="sub-header">
+            <h2>Sign up for our newsletter</h2>
+            <p>Get the latest news on how our code is doing right in your inbox</p>
+        </section>
+        
+        <form action="index.html" method="post">
+            
+            <fieldset>
+            
+                <h3>Contact Information</h3>
+
+                <label for="first-name" class="label-flexible">First Name:</label>
+                <input required="true" placeholder="Required" type="text" id="first_name" name="user_first_name"><br/>
+                
+                <label for="last-name" class="label-flexible">Last Name:</label>
+                <input required="true" placeholder="Required" type="text" id="last_name" name="user_last_name"><br/>
+
+                <label for="mail" class="label-flexible">E-mail:</label>
+                <input required="true" placeholder="Required" type="email" id="mail" name="user_email"><br/>
+                
+                <label for="profession" class="label-flexible">Profession:</label>
+                <select id="profession" name="user_profession">
+                    <option value="">Choose a Profession</option>
+                    <option value="alabama">Business Owner</option>
+                    <option value="alabama">CEO</option>
+                    <option value="alabama">Designer</option>
+                    <option value="alabama">Programmer</option>
+                </select><br/>
+
+                <label for="phone" class="label-flexible">Phone Number:</label>
+                <input type="text" id="phone" name="user_phone"><br/>
+
+                <label for="address" class="label-flexible">Street Address:</label>
+                <input type="text" id="address" name="user_address"><br/>
+
+                <label for="city" class="label-flexible">City:</label>
+                <input type="text" id="city" name="user_city"><br/>
+
+                <label for="state" class="label-flexible">State:</label>
+                <select id="state" name="user_state">
+                    <option value="">Choose a State</option>
+                    <option value="alabama">Alabama</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="arizona">Arizona</option> 
+                    <option value="arkansas">Arkansas</option> 
+                    <option value="california">California</option> 
+                    <option value="colorado">Colorado</option> 
+                    <option value="connecticut">Connecticut</option> 
+                    <option value="delaware">Delaware</option> 
+                    <option value="florida">Florida</option> 
+                    <option value="georgia">Georgia</option> 
+                    <option value="hawaii">Hawaii</option> 
+                    <option value="idaho">Idaho</option> 
+                    <option value="illinois">Illinois</option>
+                    <option value="indiana">Indiana</option> 
+                    <option value="iowa">Iowa</option> 
+                    <option value="kansas">Kansas</option> 
+                    <option value="kentucky">Kentucky</option> 
+                    <option value="louisiana">Louisiana</option> 
+                    <option value="maine">Maine</option> 
+                    <option value="maryland">Maryland</option> 
+                    <option value="massachusetts">Massachusetts</option> 
+                    <option value="michigan">Michigan</option> 
+                    <option value="minnesota">Minnesota</option> 
+                    <option value="mississipi">Mississippi</option> 
+                    <option value="missouri">Missouri</option> 
+                    <option value="montana_nebraska">Montana Nebraska</option> 
+                    <option value="nevada">Nevada</option> 
+                    <option value="new_hampshire">New Hampshire</option> 
+                    <option value="new_jersey">New Jersey</option> 
+                    <option value="new_mexico">New Mexico </option>
+                    <option value="new_york">New York</option> 
+                    <option value="north_carolina">North Carolina</option> 
+                    <option value="north_dakota">North Dakota</option> 
+                    <option value="ohio">Ohio</option> 
+                    <option value="oklahoma">Oklahoma</option> 
+                    <option value="oregon">Oregon</option> 
+                    <option value="pennsylvania">Pennsylvania</option>
+                    <option value="rhode_island">Rhode Island</option> 
+                    <option value="south_carolina">South Carolina</option> 
+                    <option value="south_dakota">South Dakota</option> 
+                    <option value="tennessee">Tennessee</option> 
+                    <option value="texas">Texas</option> 
+                    <option value="utah">Utah</option> 
+                    <option value="vermont">Vermont</option> 
+                    <option value="virginia">Virginia</option> 
+                    <option value="washington">Washington</option> 
+                    <option value="west_virginia">West Virginia</option> 
+                    <option value="wisconsin">Wisconsin</option> 
+                    <option value="wyoming">Wyoming</option>
+                </select><br/>
+
+                <label for="zip_code" class="label-flexible">Zip Code:</label>
+                <input type="text" id="zip_code" name="zip_code"><br/>
+            
+            </fieldset>
+            
+            <fieldset>
+
+                <h3>Newsletter</h3>
+                
+                <label class="large-label">How did you hear about us?</label><br/>
+                <input type="checkbox" id="friend" value="friend_source" name="source">
+                <label for="friend">Friend</label><br/>
+                <input type="checkbox" id="sm" value="sm_source" name="source">
+                <label for="sm">Social Media</label><br/>
+                <input type="checkbox" id="email_marketing" value="email_source" name="source">
+                <label for="email_marketing">E-mail Marketing</label><br/>
+                <input type="checkbox" id="google" value="google_source" name="source">
+                <label for="google">Google</label><br/>
+                <input type="checkbox" id="adds" value="adds_source" name="source">
+                <label for="adds">Adds</label><br/>
+                
+                <label class="large-label">Select the newsletters you would like to receive:</label><br/>
+                <input type="checkbox" id="html_news" value="interest_html_news" name="user_interest">
+                <label for="html_news">HTML News</label><br/>
+                <input type="checkbox" id="css_news" value="interest_css_news" name="user_interest">
+                <label for="css_news">CSS News</label><br/>
+                <input type="checkbox" id="javascript_news" value="interest_javascript_news" name="user_interest">
+                <label for="javascript_news">JavaScript News</label><br/>
+                <input type="checkbox" id="sass_news" value="interest_sass_news" name="user_interest">
+                <label for="sass_news">Sass News</label><br/>
+                <input type="checkbox" id="ux_design_news" value="interest_ux_design_news" name="user_interest">
+                <label for="ux_design_news">UX Design</label><br/>
+                
+                <label class="large-label">Newsletter Format:</label><br/>
+                <input type="radio" id="html_format" value="html_format" name="newsletter_format">
+                <label for="html_format">HTML</label><br/>
+                <input type="radio" id="plain_text_format" value="plain_text_format" name="newsletter_format">
+                <label for="plain_text_format">Plain Text</label><br/>
+                
+                <label class="large-label" for="comments">Other topics you'd like to hear about:</label><br/>
+                <textarea id="comments" name="user_comments"></textarea><br/>
+                
+                <button type="submit">Sign up</button>
+
+                <p class="italic-special">Copyright The Code Review</p>
+            </fieldset>
+
+        </form>
+
+	 
+ 	</section><!--wrapper-->
+
+
+ </body>
+ </html>
