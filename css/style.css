@@ -34,8 +34,14 @@ h1{
                  3px 2px 3px #333;
 }
 
-h2, h3{
+h2, legend{
 	font-weight: 400;
+    
+}
+
+legend {
+    padding: 1em 0;
+    font-size: 1.2em;
 }
 
 .italic-special {
@@ -108,7 +114,8 @@ label {
 input[type="text"], 
 input[type="email"], 
 select, 
-textarea {
+textarea,
+input[type="tel"]{
     padding: 1em;
     background-color: #efefef;
     border-radius: 3%;
@@ -118,9 +125,12 @@ textarea {
 
 input[type="text"], 
 input[type="email"], 
-select {
+select,
+input[type="tel"]{
     width: 100%;
     height: 3.5em;
+    letter-spacing: 0.1em;
+    color: #4f9ab7;
     }
 
 textarea {
@@ -128,6 +138,8 @@ textarea {
     height: 8em;
     resize: none;
     margin-bottom: 1em;
+    letter-spacing: 0.1em;
+    color: #4f9ab7;
 }
 
 button {
@@ -135,7 +147,7 @@ button {
     width: 100%;
     height: 3.5em;
     text-align: center;
-    padding: 1em auto;
+    padding: 1em 0;
     color: #fff;
     background-color:#4fbab4;
     border: none;
@@ -145,8 +157,11 @@ button {
 input:focus, 
 select:focus, 
 textarea:focus{
+    transition: border .3s ease 0s, box-shadow .3s ease 0s, background .3s ease 0s;
     outline: none;
-    border: 1px solid #46698b;
+    border: 1px solid #fcc96b;
+    box-shadow: 3px 3px 15px #4f9ab7;
+    background-color: #f9d498;
 }
 
 input:checked {
@@ -158,8 +173,8 @@ input:checked {
 /* Medium screens */
 
 @media (min-width: 760px) {
-
-	input[type="text"], input[type="email"], select {
+    
+	input[type="text"], input[type="email"], input[type="tel"], select {
         width: 70%;
     }
     
@@ -167,4 +182,13 @@ input:checked {
         width: 26%;
     }
 
+}
+
+/* Large screens */
+
+@media (min-width: 1024px) {
+    button{
+        width: 50%;
+        margin: 0 25%;
+    }
 }
